@@ -1,0 +1,10 @@
+<% for(var i=0; i < body.length; i++) { %>
+  <% if (body[i].type === "p") { %>
+    <%-body[i].text%>
+  <% } else if (body[i].type === "link") { %>
+    <%-body[i].text%>: <%=body[i].url%>
+  <% } %>
+<% } %>
+<% if (locals.disclaimer) { %>
+  <%-disclaimer%>
+<% } %>

@@ -1,0 +1,50 @@
+{
+  "EN": {
+    "subject": "{{productFullName}} Email Confirmation",
+    "intro": {
+      "withHandle": "Dear {{handle}},",
+      "withoutHandle": "Hello,"
+    },
+    "title": "{{productFullName}} Email Confirmation",
+    "body": [
+      {
+        "type": "p",
+        "text": "{{ intro }}<br/><br/>You have successfully created your {{productFullName}} account.<br/>Please click on the link below to confirm your email address."
+      },
+      {
+        "type": "link",
+        "url": "{{ hostname }}/confirm-signup-email?id={{id}}&token={{token}}",
+        "text": "Confirm my email ({{ email }})"
+      },
+      {
+        "type": "p",
+        "text": "<br/>Thank you for your support!<br/><br/>The {{productFullName}} Team"
+      }
+    ],
+    "disclaimer": "You received this message because you have created an account on {{productFullName}}."
+  },
+  "FR": {
+    "subject": "{{productFullName}} Confirmation de l'email",
+    "intro": {
+      "withHandle": "Bonjour {{handle}},",
+      "withoutHandle": "Bonjour,"
+    },
+    "title": "{{productFullName}}: Confirmation de l'email",
+    "body": [
+      {
+        "type": "p",
+        "text": "{{ intro }}<br/><br/>Votre compte sur {{productFullName}} a été créé avec succès.<br/>Veuillez cliquer sur le lien ci-dessous pour confirmer votre email."
+      },
+      {
+        "type": "link",
+        "url": "{{ hostname }}/confirm-signup-email?id={{id}}&token={{token}}&",
+        "text": "Confirmer mon email ({{ email }})"
+      },
+      {
+        "type": "p",
+        "text": "<br/>Merci pour votre support!<br/><br/>L'équipe {{productFullName}}"
+      }
+    ],
+    "disclaimer": "Vous recevez ce message car vous avez créé un compte sur {{productFullName}}."
+  }
+}
