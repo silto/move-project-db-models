@@ -14,43 +14,21 @@ module.exports = function(config) {
     },
     openDuration: {
       type: String,
-      enum: ["D", "W", "Q"],
+      enum: ["daily", "weekly", "quarterly"],
       required: true,
     },
     openAsFutureDate: Date,
-    openDate: Date,
+    openDate: {
+      type: Date,
+      required: true,
+    },
     closeDate: Date,
     expirationPrice: Number,
-    IV: Number,
+    IVFuture: Number,
+    IVOpen: Number,
     RV: Number,
     strike: Number,
-    history: [{
-      timestamp: Number,
-      date: Date,
-      open: Number,
-      high: Number,
-      low: Number,
-      close: Number,
-      volume: Number,
-    }],
-    relativeHistory: [{
-      timestamp: Number,
-      date: Date,
-      open: Number,
-      high: Number,
-      low: Number,
-      close: Number,
-      volume: Number,
-    }],
-    trades: [{
-      timestamp: Number,
-      date: Date,
-      liquidation: Boolean,
-      price: Number,
-      side: String,
-      size: Number,
-    }],
   });
-
+  MoveSchema.index({openDate: 1, openDuration: 1});
   return MoveSchema;
 };
