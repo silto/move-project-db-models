@@ -44,6 +44,7 @@ module.exports = function() {
       type: Number,
       required: true,
     },
+    position: Number,
     open: Number,
     high: Number,
     low: Number,
@@ -51,5 +52,6 @@ module.exports = function() {
     volume: Number,
   });
   OHLCSchema.index({move: 1, timeframe: 1, date: 1});
+  OHLCSchema.index({move: 1, timeframe: 1, position: 1});
   return OHLCSchema;
 };
