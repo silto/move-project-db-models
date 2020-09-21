@@ -17,7 +17,7 @@ module.exports = function() {
       required: true,
       index: true,
     },
-    period: {
+    timeframe: {
       type: String,
       enum: [
         "1m",
@@ -51,7 +51,6 @@ module.exports = function() {
     close: Number,
     volume: Number,
   });
-  OHLCSchema.index({move: 1, timeframe: 1, date: 1});
-  OHLCSchema.index({move: 1, timeframe: 1, position: 1});
+  OHLCSchema.index({move: 1, timeframe: 1, date: 1, position: 1});
   return OHLCSchema;
 };
