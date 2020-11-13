@@ -7,5 +7,6 @@ module.exports = function(config, helpers) {
     trade: require("./trade")(config, helpers),
     ohlc: require("./ohlc")(config, helpers),
     user: require("./user")(config, helpers),
+    btcohlc: require("./btcohlc")(config, helpers),
   };
 };
