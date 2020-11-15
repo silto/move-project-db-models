@@ -40,6 +40,6 @@ module.exports = function() {
     close: Number,
     volume: Number,
   });
-  BTCOHLCSchema.index({timeframe: 1, date: 1});
+  BTCOHLCSchema.index({timeframe: 1, date: 1, timestamp: 1});
   return BTCOHLCSchema;
 };
