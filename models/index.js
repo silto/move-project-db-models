@@ -8,5 +8,6 @@ module.exports = function(config, helpers) {
     ohlc: require("./ohlc")(config, helpers),
     user: require("./user")(config, helpers),
     btcohlc: require("./btcohlc")(config, helpers),
+    backtest: require("./backtest")(config, helpers),
   };
 };
