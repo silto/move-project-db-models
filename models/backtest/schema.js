@@ -15,6 +15,7 @@ module.exports = function() {
         enum: ["long", "short"],
         required: true,
       },
+      openCandle: Number,
       positionSize: {
         type: Number,
         required: true,
@@ -39,6 +40,7 @@ module.exports = function() {
     },
     startRunTime: Date,
     endRunTime: Date,
+    error: String,
     status: {
       type: String,
       enum: ["inqueue", "running", "finished", "error"],
