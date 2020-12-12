@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 // const constants = require("../constants");
 // const { ObjectId } = Schema.Types;
 
-module.exports = function() {
+module.exports = function(config) {
   const BacktestSchema = new Schema({
     parameters: {
       startTime: Date,
@@ -39,7 +39,7 @@ module.exports = function() {
       }],
     },
     startRunTime: Date,
-    endRunTime: Date,
+    endRunTime: { type: Date, expires: 3600 * config.backtestTTL },
     error: String,
     status: {
       type: String,
