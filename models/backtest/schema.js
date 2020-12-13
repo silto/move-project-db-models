@@ -15,16 +15,16 @@ module.exports = function(config) {
         enum: ["long", "short"],
         required: true,
       },
-      openCandle: Number,
-      positionSize: {
+      openCandle: Number,// position of the open candle
+      positionSize: {// as % of account
         type: Number,
         required: true,
       },
-      takeProfit: Number,
-      stopLoss: Number,
-      takerFee: Number,
-      makerFee: Number,
-      slippage: Number,
+      takeProfit: Number,// as % of open price
+      stopLoss: Number,// as % of open price
+      takerFee: Number,// as %
+      makerFee: Number,//as %
+      slippage: Number,// as % of target price
     },
     results: {
       trades: Number,
