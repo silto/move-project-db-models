@@ -20,7 +20,7 @@ module.exports = function(config) {
         type: Number,
         required: true,
       },
-      takeProfit: Number,// as % of open price
+      takeProfit: Number,// as % of open price (openPrice = 100, tp = 30 side = long => tp @ 70)
       stopLoss: Number,// as % of open price
       takerFee: Number,// as %
       makerFee: Number,//as %
