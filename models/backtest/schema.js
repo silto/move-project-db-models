@@ -43,7 +43,7 @@ module.exports = function(config) {
     error: String,
     status: {
       type: String,
-      enum: ["inqueue", "running", "finished", "error"],
+      enum: ["inqueue", "running", "finished", "error", "canceled"],
       required: true,
     },
   });
