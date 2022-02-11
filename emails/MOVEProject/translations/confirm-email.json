@@ -22,29 +22,5 @@
       }
     ],
     "disclaimer": "You received this message because you have an account on {{productFullName}}."
-  },
-  "FR": {
-    "subject": "{{productFullName}} Confirmation de l'email",
-    "intro": {
-      "withHandle": "Bonjour {{handle}},",
-      "withoutHandle": "Bonjour,"
-    },
-    "title": "{{productFullName}}: Confirmation de l'email",
-    "body": [
-      {
-        "type": "p",
-        "text": "{{ intro }}<br/><br/>Vous avez récemment changé l'email de votre compte {{productFullName}}.<br/>Veuillez cliquer sur le lien ci-dessous pour confirmer cet email."
-      },
-      {
-        "type": "link",
-        "url": "{{ hostname }}/confirm-email?id={{ id }}&token={{ token }}",
-        "text": "Confirmer mon email ({{ email }})"
-      },
-      {
-        "type": "p",
-        "text": "Merci pour votre support, nous espérons que vous appréciez notre service!<br/><br/>L'équipe {{productFullName}}"
-      }
-    ],
-    "disclaimer": "Vous recevez ce message car vous avez un compte sur {{productFullName}}."
   }
 }

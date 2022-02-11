@@ -154,7 +154,7 @@ module.exports = function(config, helpers) {
         options = {};
       }
       const User = mongoose.model("User");
-      let newUser;
+      let newUser = new User();
       newUser.username = obj.username;
       newUser.mail = obj.mail;
       const pwd = obj.pwd || options.generatePassword? generatePassword(15) : null;

@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const constants = require("../constants");
 const ShortId = require("mongoose-shortid-nodeps");
-const { ObjectId } = Schema.Types;
 
 module.exports = function(config) {
   const UserSchema = new Schema({

@@ -22,29 +22,5 @@
       }
     ],
     "disclaimer": "You received this message because you have created an account on {{productFullName}}."
-  },
-  "FR": {
-    "subject": "{{productFullName}} Confirmation de l'email",
-    "intro": {
-      "withHandle": "Bonjour {{handle}},",
-      "withoutHandle": "Bonjour,"
-    },
-    "title": "{{productFullName}}: Confirmation de l'email",
-    "body": [
-      {
-        "type": "p",
-        "text": "{{ intro }}<br/><br/>Votre compte sur {{productFullName}} a été créé avec succès.<br/>Veuillez cliquer sur le lien ci-dessous pour confirmer votre email."
-      },
-      {
-        "type": "link",
-        "url": "{{ hostname }}/confirm-signup-email?id={{id}}&token={{token}}&",
-        "text": "Confirmer mon email ({{ email }})"
-      },
-      {
-        "type": "p",
-        "text": "<br/>Merci pour votre support!<br/><br/>L'équipe {{productFullName}}"
-      }
-    ],
-    "disclaimer": "Vous recevez ce message car vous avez créé un compte sur {{productFullName}}."
   }
 }
