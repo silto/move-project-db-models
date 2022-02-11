@@ -75,7 +75,6 @@ module.exports = function(config, helpers) {
         select: "name handle",
         options: { limit: 1 },
       })
-      .execPopulate()
       .then(populatedUser => {
         return new Promise((resolve,reject) => {
           mailHelpers.sendConfirmSignupMail(populatedUser, (err) => (err ? reject(err) : resolve()));
