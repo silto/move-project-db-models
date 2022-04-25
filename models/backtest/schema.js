@@ -25,6 +25,15 @@ module.exports = function(config) {
       takerFee: Number,// as %
       makerFee: Number,//as %
       slippage: Number,// as % of target price
+      daysOfWeek: {
+        mon: Boolean,
+        tue: Boolean,
+        wed: Boolean,
+        thu: Boolean,
+        fri: Boolean,
+        sat: Boolean,
+        sun: Boolean,
+      },
     },
     results: {
       trades: Number,
