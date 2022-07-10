@@ -41,6 +41,9 @@ module.exports = function(config) {
       losses: Number,
       startAccount: Number,
       endAccount: Number,
+      maxEquity: Number,
+      minEquity: Number,
+      maxDrawDown: Number,
       liquidated: Boolean,
       equityHistory: [{
         date: Date,
